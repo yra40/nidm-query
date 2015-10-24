@@ -1,0 +1,20 @@
+{
+        "title": "Get coordinates from an nidm results ttl.",
+        "description": "Get coordinates, including name, coordinate,z_score, peak_name, and p value uncorrected from an nidm results ttl.",
+        "uid":"7950f524-90e8-4d54-ad6d-7b22af2e895d",
+        "creator": "<http://orcid.org/0000-0002-4387-3819>",
+        "keyword": "coordinate, peak",
+        "model": "results", 
+        "parameters": ["?name", "?coordinate", "?z_score", "?peak_name", "?pvalue_uncorrected"],
+        "sparql": ["SELECT DISTINCT ?name ?coordinate ?z_score ?peak_name ?pvalue_uncorrected",
+                   "WHERE {?coord a nidm:NIDM_0000015 ;",
+                   "rdfs:label ?name ;",
+                   "nidm:NIDM_0000086 ?coordinate .",
+                   "?peak prov:atLocation ?coord ;",
+                   "nidm:NIDM_0000092 ?z_score ;",
+                   "rdfs:label ?peak_name ;",
+                   "nidm:NIDM_0000116 ?pvalue_uncorrected .}",
+                   "ORDER BY ?name"],
+        "reference": "",
+        "@context":""   
+}
