@@ -1,0 +1,20 @@
+{
+        "title": "nidm results brainmaps.",
+        "description": "Get brainmaps from an nidm results file",
+        "uid":"c621ded9-1cf5-4b08-b194-f7d97796da08",
+        "creator": "<http://orcid.org/0000-0002-4387-3819>",
+        "keyword": "coordinate, peak",
+        "model": "results", 
+        "parameters": ["?filename", "?location"],
+        "sparql": ["PREFIX nidm: <http://purl.org/nidash/nidm#>", 
+                   "PREFIX prov: <http://www.w3.org/ns/prov#>",
+                   "prefix nfo: <http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#>",
+                   "SELECT ?filename ?location WHERE",
+                   "{ ?file prov:atLocation ?location .", 
+                   "?file nfo:fileName ?filename .",
+                   "FILTER regex(?filename, 'TS*')}"],
+        "reference": "",
+        "@context":""   
+}
+
+
