@@ -1,10 +1,8 @@
 {
-        "title": "This is a title of the query",
-        "description": "This is the description of your query",
-        "uid":"b73b423e-0660-42a1-a7d3-48e300f44872",
+        "title": "",
+        "description": "",
         "creator": "<http://orcid.org/0000-0003-1099-3328>",
         "keyword": "select all, meta",
-        "model": "meta", 
         "parameters": ["?subjectID", "?tag", "?vol", "?segID", "?annotation", "?max", "?mean"],
         "sparql": ["PREFIX cml: <http://www.connectomics.org/cff-2/>",
                    "PREFIX fs: <http://www.incf.org/ns/nidash/fs#>",

@@ -1,10 +1,8 @@
 {
         "title": "T1 recon-all with freesurfer",
         "description": "Compute FreeSurfer recon-all for every T1 image in the given rdf file",
-        "uid":"23ee1631-51a3-43c9-bd71-b02134d7e36a",
         "creator": "<http://orcid.org/0000-0003-1099-3328>",
         "keyword": "recon-all, freesurfer, T1",
-        "model": "meta", 
         "parameters": ["?uri", "?t1_uri", "?task"],
         "sparql": ["PREFIX dcat: <http://www.w3.org/ns/dcat#>",
                    "PREFIX nidm: <http://purl.org/nidash/nidm#>",
