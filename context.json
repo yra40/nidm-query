@@ -1,0 +1,22 @@
+{
+  "@context": {
+    "title": "http://purl.org/dc/terms/title",
+    "description": "http://purl.org/dc/terms/description",
+    "creator": "http://purl.org/dc/terms/creator",
+    "format": "http://www.w3.org/ns/dcat#format",
+    "keyword": "http://www.w3.org/ns/dcat#keyword",
+    "parameters": {
+      "@id": "http:purl.org/nidash/query/parameters",
+      "@container": "@list"
+    },
+    "sparql": {
+      "@id": "http://spinrdf.org/sp#query",
+      "@container": "@list"
+    },
+    "reference": "http://purl.org/dc/terms/references",
+    "type": {
+      "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+      "@type": "@id"
+    }
+  }
+}
