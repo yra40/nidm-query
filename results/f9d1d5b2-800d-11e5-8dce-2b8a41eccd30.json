@@ -21,7 +21,7 @@
                    "WHERE {",
                    "?statmap a statistic_map: ;",
                    "statistic_type: ?statmap_type ;",
-                   "prov:atLocation ?statmap_location ;",
+                   "prov:atLocation ?statmap_location .",
                    "?inference prov:used ?statmap .",
                    "?excursion_set_map prov:wasGeneratedBy ?inference .",
                    "?sig_cluster prov:wasDerivedFrom ?excusion_set_map .",
