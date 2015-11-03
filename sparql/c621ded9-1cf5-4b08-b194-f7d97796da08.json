@@ -4,15 +4,16 @@
         "creator": "<http://orcid.org/0000-0002-4387-3819>",
         "keyword": "coordinate, peak",
         "parameters": ["?filename", "?location"],
-        "sparql": ["PREFIX nidm: <http://purl.org/nidash/nidm#>", 
-                   "PREFIX prov: <http://www.w3.org/ns/prov#>",
+        "format": "select",
+        "model": "fmri results",
+        "component": "results",
+        "sparql": ["prefix nidm: <http://purl.org/nidash/nidm#>",
+                   "prefix prov: <http://www.w3.org/ns/prov#>",
                    "prefix nfo: <http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#>",
                    "SELECT ?filename ?location WHERE",
-                   "{ ?file prov:atLocation ?location .", 
+                   "{ ?file prov:atLocation ?location .",
                    "?file nfo:fileName ?filename .",
                    "FILTER regex(?filename, 'TS*')}"],
         "reference": "",
-        "@context":""   
+        "@context":""
 }
-
-
