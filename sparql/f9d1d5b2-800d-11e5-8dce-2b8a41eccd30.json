@@ -3,9 +3,12 @@
         "description": "Get the coordinates for all Statmaps",
         "creator": "<http://orcid.org/0000-0002-4387-3819>",
         "keyword": "coordinate, statmap",
-        "parameters": ["?statmap", "?statmap_filename", "?statmap_location", "?statmap_type", "?z_score", "?pvalue_uncorrected", "?coord_name", "?coordinate"],
-        "sparql": ["PREFIX nidm: <http://purl.org/nidash/nidm#>",
-                   "PREFIX prov: <http://www.w3.org/ns/prov#>",
+        "parameters": ["?statmap", "?statmap_filename", "?statmap_location", "?statmap_type", "?z_score", "?pvalue_uncorrected", "?coordinate_id", "?coord_name", "?coordinate"],
+        "format": "select",
+        "model": "fmri results",
+        "component": "results",
+        "sparql": ["prefix nidm: <http://purl.org/nidash/nidm#>",
+                   "prefix prov: <http://www.w3.org/ns/prov#>",
                    "prefix nfo: <http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#>",
                    "prefix spm: <http://purl.org/nidash/spm#>",
                    "prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>",
@@ -17,7 +20,7 @@
                    "prefix pvalue_uncorrected: <http://purl.org/nidash/nidm#NIDM_0000116>",
                    "prefix statistic_map: <http://purl.org/nidash/nidm#NIDM_0000076>",
                    "prefix statistic_type: <http://purl.org/nidash/nidm#NIDM_0000123>",
-                   "SELECT DISTINCT ?statmap ?statmap_location ?statmap_type ?z_score ?pvalue_uncorrected ?coord_name ?coordinate",
+                   "SELECT DISTINCT ?statmap ?statmap_location ?statmap_type ?z_score ?pvalue_uncorrected ?coordinate_id ?coord_name ?coordinate",
                    "WHERE {",
                    "?statmap a statistic_map: ;",
                    "statistic_type: ?statmap_type ;",
@@ -35,5 +38,6 @@
                    "coordinate: ?coordinate .",
                    "}"],
         "reference": "https://github.com/NeuroVault/NeuroVault/pull/354#issuecomment-151973717",
-        "@context":""   
+        "version":"1.1.0",
+        "@context":""
 }
