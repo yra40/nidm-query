@@ -38,5 +38,6 @@
                    "coordinate: ?coordinate .",
                    "}"],
         "reference": "https://github.com/NeuroVault/NeuroVault/pull/354#issuecomment-151973717",
+        "version":"1.1.0",
         "@context":""
 }

@@ -16,6 +16,7 @@
                    "rdfs:label ?peak_name ;",
                    "nidm:NIDM_0000116 ?pvalue_uncorrected .}",
                    "ORDER BY ?name"],
+        "version":"1.1.0",
         "reference": "",
         "@context":""
 }

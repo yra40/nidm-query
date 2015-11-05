@@ -25,6 +25,7 @@
                    "FILTER (!bound(?isVersionOf))",
                    "OPTIONAL{ ?uri dct:format ?format . } # required at the distribution level",
                    "FILTER (!bound(?isVersionOf))}"],
+        "version":"",
         "reference": "",
         "@context":""
 
