@@ -4,9 +4,6 @@
         "creator": "<http://orcid.org/0000-0002-4387-3819>",
         "keyword": "coordinate, peak",
         "parameters": ["?name", "?coordinate", "?z_score", "?peak_name", "?pvalue_uncorrected"],
-        "format": "select",
-        "model": "fmri results",
-        "component": "results",
         "sparql": ["SELECT DISTINCT ?name ?coordinate ?z_score ?peak_name ?pvalue_uncorrected",
                    "WHERE {?coord a nidm:NIDM_0000015 ;",
                    "rdfs:label ?name ;",
@@ -16,7 +13,6 @@
                    "rdfs:label ?peak_name ;",
                    "nidm:NIDM_0000116 ?pvalue_uncorrected .}",
                    "ORDER BY ?name"],
-        "version":"1.1.0",
         "reference": "",
-        "@context":""
+        "@context":""   
 }

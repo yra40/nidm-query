@@ -1,12 +1,9 @@
 {
-        "title": "Freesurfer Model Query",
-        "description": "Query for Freesurfer Stats",
+        "title": "",
+        "description": "",
         "creator": "<http://orcid.org/0000-0003-1099-3328>",
         "keyword": "select all, meta",
         "parameters": ["?subjectID", "?tag", "?vol", "?segID", "?annotation", "?max", "?mean"],
-        "format": "select",
-        "model": "freesurfer",
-        "component": "results",
         "sparql": ["PREFIX cml: <http://www.connectomics.org/cff-2/>",
                    "PREFIX fs: <http://www.incf.org/ns/nidash/fs#>",
                    "PREFIX nidm: <http://purl.org/nidash/nidm#>",
@@ -24,10 +21,9 @@
                    "fs:Volume_mm3 ?vol ;",
                    "fs:SegId ?segID ;",
                    "nidm:anatomicalAnnotation ?annotation ;",
-                   "fs:normMax ?max ;",
+                   "fs:normMax ?max ;", 
                    "fs:normMean ?mean .}"],
         "reference": "",
-        "version":"1.1.0",
         "@context":""
-
+    
 }
